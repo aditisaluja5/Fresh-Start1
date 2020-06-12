@@ -1,0 +1,5 @@
+### Find files in directory by pattern names and move to another directory
+find . -maxdepth 1 -type f -exec grep -q "pattern" '{}' ';' -exec cp '{}' /path/to/destination ';'
+
+### Count no of files in a directory
+ls | wc -l
