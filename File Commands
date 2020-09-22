@@ -5,4 +5,5 @@ find . -maxdepth 1 -type f -exec grep -q "pattern" '{}' ';' -exec cp '{}' /path/
 ls | wc -l
 
 3) :%s/\r//g Vim command to remove ^M characters from bash scripts
+4) mv `ls | head -500` ./subfolder1/ Move some x files from one dir to a subfolder.
 
